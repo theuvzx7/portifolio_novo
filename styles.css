@@ -1,9 +1,9 @@
 /* Definindo a paleta de cores */
 :root {
-    --cor-primaria: #4a90e2; /* Azul */
-    --cor-secundaria: #8e44ad; /* Roxo */
-    --cor-fundo: #f4f4f9;
-    --cor-texto: #333;
+    cor-primaria: #4a90e2; /* Azul */
+    cor-secundaria: #8e44ad; /* Roxo */
+    cor-fundo: #f4f4f9;
+    cor-texto: #333;
 }
 
 /* Resetando margens e paddings */
