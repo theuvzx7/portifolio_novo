@@ -15,8 +15,8 @@
 
 body {
     font-family: 'Merriweather', serif; /* Aplicando a fonte Merriweather */
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+    background-color: var(cor-fundo);
+    color: var(cor-texto);
     line-height: 1.6;
 }
 
@@ -27,7 +27,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: var(--cor-primaria);
+    background-color: var(cor-primaria);
     padding: 20px 0;
     color: white;
     text-align: center;
@@ -58,7 +58,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: var(--cor-secundaria); /* Altera a cor no hover */
+    color: var(cor-secundaria); /* Altera a cor no hover */
 }
 
 /* Estilo para a imagem no cabeçalho */
@@ -78,7 +78,7 @@ section {
 }
 
 section h2 {
-    color: var(--cor-secundaria);
+    color: var(cor-secundaria);
     margin-bottom: 20px;
     font-size: 2rem; /* Tamanho maior para o subtítulo */
     font-weight: 700; /* Mais negrito para o subtítulo */
@@ -94,7 +94,7 @@ section h2 {
 }
 
 .projeto h3 {
-    color: var(--cor-primaria);
+    color: var(cor-primaria);
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
@@ -111,7 +111,7 @@ section h2 {
 
 /* Rodapé */
 footer {
-    background-color: var(--cor-secundaria);
+    background-color: var(cor-secundaria);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -122,14 +122,14 @@ footer p {
 }
 
 a {
-    color: var(--cor-primaria);
+    color: var(cor-primaria);
     text-decoration: none;
     transition: color 0.3s ease; /* Transição suave */
 }
 
 a:hover {
     text-decoration: underline;
-    color: var(--cor-secundaria); /* Altera a cor no hover */
+    color: var(cor-secundaria); /* Altera a cor no hover */
 }
 
 /* Responsividade */
