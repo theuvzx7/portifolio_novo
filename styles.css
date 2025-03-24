@@ -16,6 +16,7 @@ body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     line-height: 1.6;
+    font-size: 1rem; /* Tamanho de fonte ajustado para melhor leitura */
 }
 
 .container {
@@ -26,13 +27,12 @@ body {
 header {
     background-color: var(--cor-primaria);
     padding: 20px 0;
-    color: white;
+    color: white; /* O texto do cabeçalho será branco, garantindo contraste com o fundo azul */
     text-align: center;
     position: relative;
 }
 
 header h1 {
-    background-color: #333; /* Corrigido o erro de falta de ponto e vírgula */
     margin-bottom: 10px;
     font-size: 2.5rem;
 }
@@ -47,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white; /* Cor do link em branco */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -56,7 +56,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: var(--cor-secundaria);
+    color: var(--cor-secundaria); /* Cor do link ao passar o mouse */
 }
 
 .foto-perfil {
@@ -71,6 +71,7 @@ nav ul li a:hover {
 
 section {
     padding: 40px 0;
+    color: var(--cor-texto); /* Garante que o texto seja escuro nas seções */
 }
 
 section h2 {
@@ -81,7 +82,8 @@ section h2 {
 }
 
 .projeto {
-    background-color: white;
+    background-color: #f9f9f9; /* Fundo mais suave para as seções de projeto */
+    color: var(--cor-texto); /* Garante que o texto seja escuro nas seções de projeto */
     border: 1px solid #ddd;
     padding: 20px;
     margin-bottom: 20px;
@@ -116,7 +118,7 @@ footer p {
 }
 
 a {
-    color: var(--cor-primaria);
+    color: var(--cor-primaria); /* Cor do link */
     text-decoration: none;
     transition: color 0.3s ease;
 }
