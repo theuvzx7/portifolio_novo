@@ -1,0 +1,158 @@
+/* Definindo a paleta de cores */
+:root {
+    --cor-primaria: #4a90e2; /* Azul */
+    --cor-secundaria: #8e44ad; /* Roxo */
+    --cor-fundo: #f4f4f9;
+    --cor-texto: #333;
+}
+
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif; /* Aplicando a fonte Merriweather */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    position: relative; /* Permite o posicionamento da imagem dentro do cabeçalho */
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem; /* Tamanho maior para o título */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem; /* Um pouco maior que o padrão */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transição suave */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria); /* Altera a cor no hover */
+}
+
+/* Estilo para a imagem no cabeçalho */
+.foto-perfil {
+    position: absolute; /* Posicionamento absoluto dentro do cabeçalho */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da borda direita */
+    width: 60px; /* Tamanho da imagem */
+    height: 60px; /* Tamanho da imagem */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    border: 3px solid white; /* Borda branca ao redor da imagem */
+}
+
+/* Seções */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    color: var(--cor-secundaria);
+    margin-bottom: 20px;
+    font-size: 2rem; /* Tamanho maior para o subtítulo */
+    font-weight: 700; /* Mais negrito para o subtítulo */
+}
+
+.projeto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.projeto h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.projeto p {
+    font-size: 1rem;
+}
+
+/* Efeito de hover nos projetos */
+.projeto:hover {
+    transform: translateY(-5px); /* Sobe o projeto um pouco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria); /* Altera a cor no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Aumenta a largura do container em telas menores */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título em telas menores */
+    }
+
+    nav ul li {
+        display: block; /* Coloca os links em bloco, um abaixo do outro */
+        margin-bottom: 10px;
+    }
+
+    .foto-perfil {
+        width: 50px; /* Reduz o tamanho da imagem em telas pequenas */
+        height: 50px;
+    }
+
+    section {
+        padding: 20px 0; /* Reduz o padding em telas pequenas */
+    }
+}
