@@ -1,8 +1,8 @@
 :root {
-    cor-primaria: #4a90e2;
-    cor-secundaria: #8e44ad;
-    cor-fundo: #f4f4f9;
-    cor-texto: #333;
+    --cor-primaria: #3498db;
+    --cor-secundaria: #e74c3c;
+    --cor-fundo: #ecf0f1;
+    --cor-texto: #2c3e50;
 }
 
 * {
@@ -13,18 +13,18 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: var(cor-fundo);
-    color: var(cor-texto);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     line-height: 1.6;
 }
 
- container {
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
 header {
-    background-color: var(cor-primaria);
+    background-color: var(--cor-primaria);
     padding: 20px 0;
     color: white;
     text-align: center;
@@ -55,11 +55,11 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: var(cor-secundaria);
+    color: var(--cor-secundaria);
 }
 
-foto-perfil {
-    position: absolute;/
+.foto-perfil {
+    position: absolute;
     top: 20px;
     right: 20px;
     width: 60px;
@@ -73,13 +73,13 @@ section {
 }
 
 section h2 {
-    color: var(cor-secundaria);
+    color: var(--cor-secundaria);
     margin-bottom: 20px;
     font-size: 2rem;
     font-weight: 700;
 }
 
- projeto {
+.projeto {
     background-color: white;
     border: 1px solid #ddd;
     padding: 20px;
@@ -88,23 +88,23 @@ section h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
- projeto h3 {
-    color: var(cor-primaria);
+.projeto h3 {
+    color: var(--cor-primaria);
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
 
- projeto p {
+.projeto p {
     font-size: 1rem;
 }
 
- projeto:hover {
+.projeto:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: var(cor-secundaria);
+    background-color: var(--cor-secundaria);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -115,18 +115,18 @@ footer p {
 }
 
 a {
-    color: var(cor-primaria);
+    color: var(--cor-primaria);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline;
-    color: var(cor-secundaria);
+    color: var(--cor-secundaria);
 }
 
 @media (max-width: 768px) {
-    container {
+    .container {
         width: 90%;
     }
 
@@ -139,7 +139,7 @@ a:hover {
         margin-bottom: 10px;
     }
 
-     foto-perfil {
+    .foto-perfil {
         width: 50px;
         height: 50px;
     }
